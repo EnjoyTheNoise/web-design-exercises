@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>news_1</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div w3-include-html="elements/header.html"></div>
+        <main class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <div w3-include-html="elements/navmenu.html"></div>
+            </div>
+            <div class="col-md-7">
+                <div w3-include-html="elements/content.html"></div>
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <span>
+                        Zobacz se pdf'a
+                        <a href="/web/viewer.html?file=/pdf/User_Guide_-_English.pdf">
+                        <button type="button" class="btn btn-primary btn-lg">
+                            <span class="glyphicon glyphicon-file"></span>PDF
+                        </button>
+                        </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                        <b>Zbyszek Stonoga</b>
+                    </div>
+                    <div class="panel-body">
+                        <div style="position:relative;height:0;padding-bottom:56.25%">
+                            <iframe src="https://www.youtube.com/embed/iPs8MNKc6UA?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="row">
+            <div w3-include-html="elements/footer.html"></div>
+        </footer>
+    </div>
+    <script>w3.includeHTML();</script>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MAIN LOCAL</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <main class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <div class="panel panel-primary">    
+                    <div class="panel-heading"><b>Menu</b></div>
+                    <div id="menu" class="panel-body">
+                        <nav class="navbar">
+                            <ul class="nav">
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false" class="force-pointer">Link 2 <b class="caret"></b></a>
+                                    <ul class="nav collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
+                                        <li><a href="#">&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-right arrow"></i> Link 2.1</a></li>
+                                        <li><a href="#">&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-right arrow"></i> Link 2.2</a></li>
+                                        <li><a href="#">&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-arrow-right arrow"></i> Link 2.3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="#">Link 4</a></li>
+                                <li><a href="#">Link 5</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <b>PDF JS TEST</b>
+                    </div>
+                    <div class="panel-body">
+                        <a href="/web/viewer.html?file=/pdf/User_Guide_-_English.pdf">Open yourpdf.pdf with PDF.js</a>
+                    </div>
+                </div>
+                <div w3-include-html="elements/content.html"></div>
+            </div>
+        </main>
+        <footer class="row">
+            <div class="col-md-7 col-md-offset-3">
+                <div class="panel panel-primary">
+                    <div class="panel-body">
+                        <h3 class="text-right">Twoje motto na zawsze: <small><i class="motto">nie denerwować informatyków</i></small></h3>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+
+</html>

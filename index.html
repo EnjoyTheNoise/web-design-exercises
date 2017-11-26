@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MAIN ONSERVER</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div w3-include-html="elements/header.html"></div>
+        <main class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <div w3-include-html="elements/navmenu.html"></div>
+            </div>
+            <div class="col-md-7">
+                <div w3-include-html="elements/content.html"></div>
+            </div>
+        </main>
+        <footer class="row">
+            <div w3-include-html="elements/footer.html"></div>
+        </footer>
+    </div>
+    <script>w3.includeHTML();</script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
